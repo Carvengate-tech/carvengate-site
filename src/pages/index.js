@@ -7,6 +7,7 @@ import Business from "../images/business.png"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Button from "../components/button"
 
 const IndexPage = () => {
   useEffect(() => {
@@ -98,6 +99,9 @@ const IndexPage = () => {
                       "We are a digital agency that specialises in graphics & brand design, software development & digital marketing services"
                     }
                   </p>
+                  <div className="w-24 mt-4">
+                    <Button buttonName={`DETAILS`} className="ml-0" />
+                  </div>
                 </div>
               </div>
               <div className="flex items-center justify-between">
@@ -111,6 +115,9 @@ const IndexPage = () => {
                       "We are a digital agency that specialises in graphics & brand design, software development & digital marketing services"
                     }
                   </p>
+                  <div className="w-24 mt-4">
+                    <Button buttonName={`DETAILS`} className="ml-0" />
+                  </div>
                 </div>
                 <div className="w-1/2 rounded-md bg-blue-950">
                   <img src={WorksImg} alt="" className="" />
