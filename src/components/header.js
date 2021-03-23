@@ -1,5 +1,4 @@
 import * as React from "react"
-// import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import logo from "../images/carvengate-logo.png"
 import caret from '../images/caret.svg'
@@ -12,10 +11,10 @@ const Header = () => (
     </Link>
     <div className="flex items-center">
       <Link to="/" className="mx-4 text-xs font-semibold" activeClassName="">HOME</Link>
-      <Link to="/about" className="mx-4 text-xs font-semibold" activeClassName="">ABOUT</Link>
-      <Link to="/works" className="mx-4 text-xs font-semibold" activeClassName="">WORKS</Link>
-      <Link to="/hire-us" className="flex transition-all duration-1000 ease-linear ml-7 rounded-2xl hover:bg-blue-700 hover:text-white">
-        <span className="flex items-center justify-center w-6 text-white bg-blue-700 rounded-full">
+      <Link to="#" className="mx-4 text-xs font-semibold" activeClassName="">ABOUT</Link>
+      <Link to="#" className="mx-4 text-xs font-semibold" activeClassName="">WORKS</Link>
+      <Link to="#" className="flex transition-all duration-1000 ease-linear ml-7 rounded-2xl hover:bg-blue-550 hover:text-white">
+        <span className="flex items-center justify-center w-6 text-white rounded-full bg-blue-550">
           <img src={caret} alt="" className="transform -rotate-90" />
         </span>
         <p className="py-1 pr-2 ml-1 text-xs font-semibold">HIRE US</p>
@@ -23,13 +22,5 @@ const Header = () => (
     </div>
   </header>
 )
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
 
 export default Header
