@@ -13,9 +13,9 @@ const IndexPage = () => {
   useEffect(() => {
     let elemIndex = 0
     let elem2Index = 0
-    carousel()
+    let timer
 
-    function carousel() {
+    const carousel = () => {
       const elem = document.getElementsByClassName("caroImg")
       const elem2 = document.getElementsByClassName("carImg")
 
@@ -32,9 +32,16 @@ const IndexPage = () => {
 
       if (elem2Index > elem2.length) elem2Index = 1
       elem2[elem2Index - 1].style.display = "block"
-      setTimeout(carousel, 3000)
+      timer = setTimeout(carousel, 3000)
+    }
+    carousel()
+
+    return () => {
+      clearTimeout(timer)
     }
   }, [])
+
+
 
   return (
     <>

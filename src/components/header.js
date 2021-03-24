@@ -10,9 +10,9 @@ const Header = () => (
       <p className="tracking-widest">CARVENGATE</p>
     </Link>
     <div className="flex items-center justify-center">
-      <Link to="/" className="mx-1 text-xs font-semibold sm:mx-4" activeClassName="">HOME</Link>
-      <Link to="#" className="mx-1 text-xs font-semibold sm:mx-4" activeClassName="">ABOUT</Link>
-      <Link to="#" className="mx-1 text-xs font-semibold sm:mx-4" activeClassName="">WORKS</Link>
+      <Link to="/" className="mx-1 text-xs font-semibold sm:mx-4" activeClassName="text-blue-550">HOME</Link>
+      <Link to="/about" className="mx-1 text-xs font-semibold sm:mx-4" activeClassName="text-blue-550">ABOUT</Link>
+      <Link to="/works" className="mx-1 text-xs font-semibold sm:mx-4" activeClassName="text-blue-550">WORKS</Link>
       <Button buttonName={`HIRE US`} />
     </div>
   </header>
