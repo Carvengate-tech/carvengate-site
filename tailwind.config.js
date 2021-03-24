@@ -17,6 +17,7 @@ module.exports = {
         'blue-trans': 'rgba(0, 102, 204, 0.04)',
       },
       spacing: {
+        '17rem': '17rem',
         '30rem': '30rem',
         '37rem': '37rem',
         '64rem': '64rem',

@@ -42,34 +42,34 @@ const IndexPage = () => {
         <SEO title="Home" />
         <div className="h-full">
           <section>
-            <div className="flex flex-col justify-center mt-52">
-              <h1 className="my-3 text-5xl font-normal text-center uppercase font-Jost">
+            <div className="flex flex-col justify-center px-2 mt-10 md:mt-52">
+              <h1 className="my-3 text-2xl font-normal text-center uppercase md:text-5xl font-Jost">
                 {"We create digital"}
               </h1>
-              <h1 className="text-5xl font-normal text-center uppercase font-Jost">
+              <h1 className="text-2xl font-normal text-center uppercase md:text-5xl font-Jost">
                 {"Identities & experiences."}
               </h1>
             </div>
             <div className="mt-6 mb-20">
               <div className="relative flex justify-center">
-                <img src={MacBook} alt="" className="relative w-3/5" />
+                <img src={MacBook} alt="" className="relative md:w-3/5" />
                 <img
                   src={Desktop}
                   alt=""
-                  className={`hidden caroImg absolute w-37rem top-0.5`}
+                  className={`hidden caroImg absolute w-17rem md:w-37rem md:top-0.5`}
                 />
                 <img
                   src={WorksImg}
                   alt=""
-                  className={`hidden caroImg absolute w-37rem top-0.5`}
+                  className={`hidden caroImg absolute w-17rem md:w-37rem top-0.5`}
                 />
                 <img
                   src={Business}
                   alt=""
-                  className={`hidden caroImg absolute w-30rem top-7`}
+                  className={`hidden caroImg absolute w-60 top-3 md:w-30rem md:top-7`}
                 />
               </div>
-              <div className="relative flex -top-96 left-70rem">
+              <div className="relative hidden md:flex -top-96 left-70rem">
                 <img src={WorksImg} alt="" className="absolute hidden carImg w-37rem -top-12" />
                 <img src={Business} alt="" className="absolute hidden carImg w-30rem" />
                 <img
@@ -81,16 +81,16 @@ const IndexPage = () => {
             </div>
           </section>
           <section>
-            <div className="h-full py-20 bg-blue-trans px-28">
+            <div className="h-full px-10 py-10 md:py-20 bg-blue-trans md:px-28">
               <h2 className="text-2xl font-semibold text-center font-Jost">
                 Recent Works
               </h2>
-              <div className="flex items-center justify-between mt-12 mb-20">
-                <div className="w-1/2 rounded-md bg-blue-950">
+              <div className="items-center justify-between block mt-12 mb-20 md:flex">
+                <div className="rounded-md md:w-1/2 bg-blue-950">
                   <img src={WorksImg} alt="" className="" />
                 </div>
-                <div className="flex flex-col w-2/5">
-                  <p className="text-base font-medium font-Jost">Web Design</p>
+                <div className="flex flex-col md:w-2/5">
+                  <p className="mt-6 text-base font-medium font-Jost md:mt-0">Web Design</p>
                   <h2 className="my-4 text-xl font-semibold">
                     Arik Air Landing Page Design
                   </h2>
@@ -104,9 +104,12 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col w-2/5">
-                  <p className="text-base font-medium font-Jost">Web Design</p>
+              <div className="items-center justify-between block md:flex">
+                <div className="rounded-md md:hidden md:w-1/2 bg-blue-950">
+                  <img src={WorksImg} alt="" className="" />
+                </div>
+                <div className="flex flex-col md:w-2/5">
+                  <p className="mt-6 text-base font-medium font-Jost md:mt-0">Web Design</p>
                   <h2 className="my-4 text-xl font-semibold">
                     Arik Air Landing Page Design
                   </h2>
@@ -119,7 +122,7 @@ const IndexPage = () => {
                     <Button buttonName={`DETAILS`} className="ml-0" />
                   </div>
                 </div>
-                <div className="w-1/2 rounded-md bg-blue-950">
+                <div className="hidden rounded-md md:block md:w-1/2 bg-blue-950">
                   <img src={WorksImg} alt="" className="" />
                 </div>
               </div>

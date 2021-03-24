@@ -4,7 +4,7 @@ import CalIcom from '../images/account.svg'
 import PolIcon from '../images/policy.svg'
 
 const Footer = () => (
-  <div className="bg-blue-550">
+  <div className="hidden bg-blue-550 md:block">
     <h1 className="pt-10 text-2xl font-semibold text-center text-white font-Jost">Our Services</h1>
 
     <div className="flex items-center justify-between mt-10 px-28">
