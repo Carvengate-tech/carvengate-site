@@ -1,6 +1,6 @@
 import React from "react"
 import Footer from "../components/footer"
-import Business from "../images/business.png"
+import Desktop from "../images/desktop.jpg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className="px-6 mt-20">
             <div className="relative flex justify-center">
-              <img src={Business} alt="" className="relative md:w-3/5" />
+              <img src={Desktop} alt="" className="relative md:w-3/5" />
             </div>
           </div>
           <div className="mt-20">

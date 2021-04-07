@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import Footer from "../components/footer"
-import WorksImg from "../images/work.png"
+import WorksImg from "../images/work.jpg"
+import WorkImg from "../images/work.png"
 import MacBook from "../images/macbook.png"
-import Desktop from "../images/desktop.png"
-import Business from "../images/business.png"
+import Desktop from "../images/desktop.jpg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -63,26 +63,20 @@ const IndexPage = () => {
                 <img
                   src={Desktop}
                   alt=""
-                  className={`hidden caroImg absolute w-17rem md:w-37rem md:top-0.5`}
+                  className={`hidden caroImg absolute w-64/100 md:w-38/100 top-7/100`}
                 />
                 <img
                   src={WorksImg}
                   alt=""
-                  className={`hidden caroImg absolute w-17rem md:w-37rem top-0.5`}
-                />
-                <img
-                  src={Business}
-                  alt=""
-                  className={`hidden caroImg absolute w-60 top-3 md:w-30rem md:top-7`}
+                  className={`hidden caroImg absolute w-64/100 md:w-38/100 top-7/100`}
                 />
               </div>
               <div className="relative hidden md:flex -top-96 left-70rem">
-                <img src={WorksImg} alt="" className="absolute hidden carImg w-37rem -top-12" />
-                <img src={Business} alt="" className="absolute hidden carImg w-30rem" />
+                <img src={WorksImg} alt="" className="absolute top-0 hidden carImg w-38/100" />
                 <img
                   src={Desktop}
                   alt=""
-                  className="absolute hidden carImg w-37rem -top-12"
+                  className="absolute top-0 hidden carImg w-38/100"
                 />
               </div>
             </div>
@@ -94,7 +88,7 @@ const IndexPage = () => {
               </h2>
               <div className="items-center justify-between block mt-12 mb-20 md:flex">
                 <div className="rounded-md md:w-1/2 bg-blue-950">
-                  <img src={WorksImg} alt="" className="" />
+                  <img src={WorkImg} alt="" className="" />
                 </div>
                 <div className="flex flex-col md:w-2/5">
                   <p className="mt-6 text-base font-medium font-Jost md:mt-0">Web Design</p>
@@ -113,7 +107,7 @@ const IndexPage = () => {
               </div>
               <div className="items-center justify-between block md:flex">
                 <div className="rounded-md md:hidden md:w-1/2 bg-blue-950">
-                  <img src={WorksImg} alt="" className="" />
+                  <img src={WorkImg} alt="" className="" />
                 </div>
                 <div className="flex flex-col md:w-2/5">
                   <p className="mt-6 text-base font-medium font-Jost md:mt-0">Web Design</p>
@@ -130,7 +124,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="hidden rounded-md md:block md:w-1/2 bg-blue-950">
-                  <img src={WorksImg} alt="" className="" />
+                  <img src={WorkImg} alt="" className="" />
                 </div>
               </div>
             </div>
